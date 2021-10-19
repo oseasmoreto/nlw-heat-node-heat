@@ -55,7 +55,7 @@ class AuthenticateUserService {
           github_id: id,
           login: login,
           avatar_url: avatar_url,
-          name: name
+          name: name != null ? name : ''
         }
       });
     }
