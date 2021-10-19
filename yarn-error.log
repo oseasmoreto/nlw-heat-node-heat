@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\oseas\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/prisma/client
+  C:\Program Files\nodejs\node.exe C:\Users\oseas\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
 
 PATH: 
   C:\Users\oseas\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\oseas\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\php;C:\Program Files\Git\cmd;C:\composer;C:\Program Files\nodejs;C:\php7;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\chocolatey\bin;C:\Program Files\erl10.7\bin;C:\Program Files (x86)\Elixir\bin;C:\Windows\system32\config\systemprofile\.mix\escripts;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\oseas\AppData\Local\Microsoft\WindowsApps;C:\Users\oseas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\oseas\AppData\Roaming\Composer\vendor\bin;C:\Users\oseas\AppData\Roaming\npm;C:\Users\oseas\AppData\Local\nvs\default;C:\Users\oseas\AppData\Local\nvs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fprisma/client: Request "https://registry.yarnpkg.com/@types%2fprisma/client" returned a 405
-      at Request.params.callback [as _callback] (C:\Users\oseas\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67038:18)
-      at Request.self.callback (C:\Users\oseas\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
-      at Request.emit (events.js:375:28)
-      at Request.<anonymous> (C:\Users\oseas\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
-      at Request.emit (events.js:375:28)
-      at IncomingMessage.<anonymous> (C:\Users\oseas\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
-      at Object.onceWrapper (events.js:481:28)
-      at IncomingMessage.emit (events.js:387:35)
-      at endReadableNT (internal/streams/readable.js:1317:12)
-      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+  Error: EPERM: operation not permitted, unlink 'C:\workplace\oseasmoreto\nlw-heat\backend\node_modules\prisma\engines\33838b0f78f1fe9052cf9a00e9761c9dc097a63c\query_engine-windows.dll.node'
 
 npm manifest: 
   {
@@ -33,7 +23,7 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "dev": "ts-node-dev src/app.ts"
+      "dev": "ts-node-dev --exit-child src/app.ts"
     },
     "dependencies": {
       "@prisma/client": "^3.3.0",
